@@ -10,13 +10,24 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   </head>
   <body>
-    <form class="search-form" id="search-form">
-      <input type="text" name="query" autocomplete="off" placeholder="Search images..." />
-    </form>
-    <ul class="gallery js-gallery-container"></ul>
-    <button type="button" class="btn btn-primary button" data-action="load-more"></button>
-     <script src="./index.js"></script>
+    <main class="main">
+      <section class="images-section">
+        <form class="search-form" id="search-form">
+          <input
+            class="form-control"
+            type="text"
+            name="query"
+            autocomplete="off"
+            placeholder="Search images..."
+          />
+        </form>
+ <ul class="gallery js-gallery-container"></ul>
+ <div id="observer"></div>
+      </section>
+    </main>
+ <script src="./index.js"></script>
   </body>
 </html>
